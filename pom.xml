@@ -1,21 +1,27 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>io.github.emays</groupId>
+	<parent>
+		<groupId>io.github.emays</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.0.10</version>
+		<relativePath />
+	</parent>
+
 	<artifactId>esri-geometry-api</artifactId>
 	<version>2.2.5-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Esri Geometry API for Java</name>
-	<description>The Esri Geometry API for Java enables developers to write custom applications for analysis of spatial data.</description>
-
+	<description>The Esri Geometry API for Java enables developers to write
+		custom applications for analysis of spatial data.</description>
 	<url>https://github.com/emays/geometry-api-java</url>
-
 	<licenses>
 		<license>
-				<name>The Apache Software License, Version 2.0</name>
-				<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-				<distribution>repo</distribution>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
 		</license>
 	</licenses>
 
@@ -42,11 +48,11 @@
 
 	<scm>
 		<connection>scm:git:https://www.github.com/emays/geometry-api-java</connection>
-		<developerConnection>scm:git:https://www.github.com/emays/geometry-api-java</developerConnection>
+		<developerConnection>
+			scm:git:https://www.github.com/emays/geometry-api-java</developerConnection>
 		<url>https://www.github.com/emays/geometry-api-java</url>
 		<tag>HEAD</tag>
 	</scm>
-
 	<distributionManagement>
 		<snapshotRepository>
 			<id>ossrh</id>
@@ -55,30 +61,20 @@
 	</distributionManagement>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-		<java.version>11</java.version>
-
-		<!-- dependency versions -->
-		<jackson.version>2.21.2</jackson.version>
-		<junit.version>4.12</junit.version>
-
-		<!-- plugin versions -->
-		<maven-compiler-plugin.version>3.15.0</maven-compiler-plugin.version>
+		<junit4.version>4.13.2</junit4.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
-			<version>${jackson.version}</version>
 		</dependency>
 
 		<!-- Test dependencies -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
+			<version>${junit4.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -88,19 +84,4 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>${maven-compiler-plugin.version}</version>
-					<configuration>
-						<source>${java.version}</source>
-						<target>${java.version}</target>
-						<release>${java.version}</release>
-					</configuration>
-				</plugin>
-		</plugins>
-	</build>
 </project>
