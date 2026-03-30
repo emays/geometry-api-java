@@ -24,22 +24,22 @@
 
 package com.esri.core.geometry;
 
-import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
-import static sun.misc.Unsafe.ARRAY_BYTE_INDEX_SCALE;
-import static sun.misc.Unsafe.ARRAY_CHAR_BASE_OFFSET;
-import static sun.misc.Unsafe.ARRAY_CHAR_INDEX_SCALE;
-import static sun.misc.Unsafe.ARRAY_DOUBLE_BASE_OFFSET;
-import static sun.misc.Unsafe.ARRAY_DOUBLE_INDEX_SCALE;
-import static sun.misc.Unsafe.ARRAY_FLOAT_BASE_OFFSET;
-import static sun.misc.Unsafe.ARRAY_FLOAT_INDEX_SCALE;
-import static sun.misc.Unsafe.ARRAY_INT_BASE_OFFSET;
-import static sun.misc.Unsafe.ARRAY_INT_INDEX_SCALE;
-import static sun.misc.Unsafe.ARRAY_LONG_BASE_OFFSET;
-import static sun.misc.Unsafe.ARRAY_LONG_INDEX_SCALE;
-import static sun.misc.Unsafe.ARRAY_OBJECT_BASE_OFFSET;
-import static sun.misc.Unsafe.ARRAY_OBJECT_INDEX_SCALE;
-import static sun.misc.Unsafe.ARRAY_SHORT_BASE_OFFSET;
-import static sun.misc.Unsafe.ARRAY_SHORT_INDEX_SCALE;
+//import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
+//import static sun.misc.Unsafe.ARRAY_BYTE_INDEX_SCALE;
+//import static sun.misc.Unsafe.ARRAY_CHAR_BASE_OFFSET;
+//import static sun.misc.Unsafe.ARRAY_CHAR_INDEX_SCALE;
+//import static sun.misc.Unsafe.ARRAY_DOUBLE_BASE_OFFSET;
+//import static sun.misc.Unsafe.ARRAY_DOUBLE_INDEX_SCALE;
+//import static sun.misc.Unsafe.ARRAY_FLOAT_BASE_OFFSET;
+//import static sun.misc.Unsafe.ARRAY_FLOAT_INDEX_SCALE;
+//import static sun.misc.Unsafe.ARRAY_INT_BASE_OFFSET;
+//import static sun.misc.Unsafe.ARRAY_INT_INDEX_SCALE;
+//import static sun.misc.Unsafe.ARRAY_LONG_BASE_OFFSET;
+//import static sun.misc.Unsafe.ARRAY_LONG_INDEX_SCALE;
+//import static sun.misc.Unsafe.ARRAY_OBJECT_BASE_OFFSET;
+//import static sun.misc.Unsafe.ARRAY_OBJECT_INDEX_SCALE;
+//import static sun.misc.Unsafe.ARRAY_SHORT_BASE_OFFSET;
+//import static sun.misc.Unsafe.ARRAY_SHORT_INDEX_SCALE;
 
 public final class SizeOf {
 	public static final int SIZE_OF_ATTRIBUTE_STREAM_OF_FLOAT = 24;
@@ -105,6 +105,23 @@ public final class SizeOf {
 	public static final int SIZE_OF_DATA = 24;
 
 	public static final int SIZE_OF_STRIDED_INDEX_TYPE_COLLECTION = 48;
+	
+	private static int ARRAY_BYTE_BASE_OFFSET = 24;
+	private static int ARRAY_BYTE_INDEX_SCALE = 24;
+	private static int ARRAY_CHAR_BASE_OFFSET = 24;
+	private static int ARRAY_CHAR_INDEX_SCALE = 24;
+	private static int ARRAY_DOUBLE_BASE_OFFSET = 24;
+	private static int ARRAY_DOUBLE_INDEX_SCALE = 24;
+	private static int ARRAY_FLOAT_BASE_OFFSET = 24;
+	private static int ARRAY_FLOAT_INDEX_SCALE = 24;
+	private static int ARRAY_INT_BASE_OFFSET = 24;
+	private static int ARRAY_INT_INDEX_SCALE = 24;
+	private static int ARRAY_LONG_BASE_OFFSET = 24;
+	private static int ARRAY_LONG_INDEX_SCALE = 24;
+	private static int ARRAY_OBJECT_BASE_OFFSET = 24;
+	private static int ARRAY_OBJECT_INDEX_SCALE = 24;
+	private static int ARRAY_SHORT_BASE_OFFSET = 24;
+	private static int ARRAY_SHORT_INDEX_SCALE = 24;
 
 	public static long sizeOfByteArray(int length) {
 		return ARRAY_BYTE_BASE_OFFSET + (((long) ARRAY_BYTE_INDEX_SCALE) * length);
