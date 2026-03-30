@@ -11,7 +11,6 @@
 
 	<artifactId>esri-geometry-api</artifactId>
 	<version>2.2.5-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<name>Esri Geometry API for Java</name>
 	<description>The Esri Geometry API for Java enables developers to write
@@ -53,24 +52,14 @@
 		<url>https://www.github.com/emays/geometry-api-java</url>
 		<tag>HEAD</tag>
 	</scm>
-	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
 
 	<properties>
 		<junit4.version>4.13.2</junit4.version>
+		<mockito.version>3.12.4</mockito.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-core</artifactId>
-		</dependency>
-
-		<!-- Test dependencies -->
+		<!-- test dependencies -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -80,8 +69,13 @@
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-			<version>3.12.4</version>
+			<version>${mockito.version}</version>
 			<scope>test</scope>
+		</dependency>
+		<!-- other deoendencies -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
 		</dependency>
 	</dependencies>
 </project>
