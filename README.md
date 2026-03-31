@@ -1,4 +1,4 @@
-[![Build](https://github.com/emays/esri-geometry-api/actions/workflows/maven.yml/badge.svg)](https://github.com/emays/esri-geometry-api/actions/workflows/maven.yml)
+[![Build](https://github.com/emays/geometry-api-java/actions/workflows/maven.yml/badge.svg)](https://github.com/emays/geometry-api-java/actions/workflows/maven.yml)
 
 This is a fork of the [Esri Geometry API for Java](https://github.com/Esri/geometry-api-java)
 
