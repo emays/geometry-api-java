@@ -1,4 +1,14 @@
-[![Build Status](https://travis-ci.org/Esri/geometry-api-java.png?branch=master)](https://travis-ci.org/Esri/geometry-api-java)
+[![Build](https://github.com/emays/esri-geometry-api/actions/workflows/maven.yml/badge.svg)](https://github.com/emays/esri-geometry-api/actions/workflows/maven.yml)
+
+This is a fork of the [Esri Geometry API for Java](https://github.com/Esri/geometry-api-java)
+
+Primary changes:
+
+* Implement modules (JPMS)
+* Java 25
+* Note: groupId is io.github.emays
+
+Available at [Maven Central](https://central.sonatype.com/artifact/io.github.emays/esri-geometry-api)
 
 # geometry-api-java
 
@@ -8,32 +18,6 @@ The Esri Geometry API for Java can be used to enable spatial data processing in 
 * API methods to create simple geometries directly with the API, or by importing from supported formats: JSON, WKT, and Shape
 * API methods for spatial operations: union, difference, intersect, clip, cut, and buffer
 * API methods for topological relationship tests: equals, within, contains, crosses, and touches
-
-## Instructions
-
-Building the source:
-
-1. Download and unzip the .zip file, or clone the repository.
-1. To build the jar, run the `mvn compile` command-line command from within the cloned directory.
-1. Deploy the esri-geometry-api.jar to the target system, add a reference to it in a Java project.
-1. To run the unit-tests, run the `mvn test` command-line command from within the cloned directory.
-
-The project is also available as a [Maven](http://maven.apache.org/) dependency:
-
-```xml
-<dependency>
-  <groupId>com.esri.geometry</groupId>
-  <artifactId>esri-geometry-api</artifactId>
-  <version>2.2.4</version>
-</dependency>
-```
-
-## Requirements
-
-* Java JDK 1.6 or greater.
-* [Apache Maven](https://maven.apache.org/) build system.
-* Experience developing MapReduce applications for [Apache Hadoop](http://hadoop.apache.org/).
-* Familiarity with text-based spatial data formats such as JSON or WKT would be useful. 
 
 ## Documentation
 * [geometry-api-java/Wiki](https://github.com/Esri/geometry-api-java/wiki/)
@@ -45,13 +29,6 @@ The project is also available as a [Maven](http://maven.apache.org/) dependency:
 * [ArcGIS Blog](http://blogs.esri.com/esri/arcgis/)
 * [twitter@esri](http://twitter.com/esri)
 
-## Issues
-
-Find a bug or want to request a new feature?  Please let us know by submitting an issue.
-
-## Contributing
-
-Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing)
 
 ## Licensing
 Copyright 2013-2019 Esri
